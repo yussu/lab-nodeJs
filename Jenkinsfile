@@ -9,10 +9,10 @@ pipeline {
             }
         }
 
-       stage('Test') 
+        stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'npm test' // Replace 'npm test' with the actual command to run your tests (e.g., 'npm run test' or 'mocha')
+                sh 'npm test'
             }
         }
 
@@ -23,3 +23,4 @@ pipeline {
             }
         }
     }
+}
